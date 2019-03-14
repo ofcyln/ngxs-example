@@ -1,0 +1,11 @@
+<div class="left">
+  <input type="text" placeholder="Name" #name />
+
+  <input type="text" placeholder="URL" #url />
+
+  <button
+    (click)="addTutorial(name.value, url.value)"
+    [disabled]="!name.value">
+    Add a tutorial
+  </button>
+</div>
